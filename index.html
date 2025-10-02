@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/png" href="logo.png">
   <title>Privacy Policy — eWHODAS</title>
   <style>
     :root{
@@ -12,6 +13,19 @@
     body{background:var(--bg); margin:0; padding:28px; color:#111}
     .wrap{max-width:880px; margin:0 auto}
     header{display:flex;align-items:center;gap:16px;margin-bottom:18px;flex-wrap:wrap}
+    
+    /* --- New Styles Added --- */
+    .title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px; /* Space between logo and title */
+    }
+    .logo {
+      height: 64px; /* Adjust logo size as needed */
+      width: 64px;
+    }
+    /* --- End of New Styles --- */
+
     h1{margin:0;font-size:20px}
     .lang-btns{margin-left:auto;display:flex;gap:8px}
     button{background:transparent;border:1px solid #ddd;padding:6px 10px;border-radius:8px;cursor:pointer;font-size:14px}
@@ -41,7 +55,10 @@
   <div class="wrap">
     <header>
       <div>
-        <h1>eWHODAS — Privacy Policy</h1>
+        <div class="title-group">
+          <img src="logo.png" alt="eWHODAS Logo" class="logo">
+          <h1>eWHODAS — Privacy Policy</h1>
+        </div>
         <small id="effective">Last updated: <span id="effective-date">February 02, 2022</span></small>
       </div>
       <div class="lang-btns" role="tablist" aria-label="Language">
@@ -49,7 +66,6 @@
         <button id="btn-pt" role="tab" aria-selected="false">Português</button>
       </div>
     </header>
-
     <main class="card" id="content">
       <section class="lang lang-en" data-lang="en">
         <p><strong>Welcome! Thank you for using eWHODAS!</strong></p>
