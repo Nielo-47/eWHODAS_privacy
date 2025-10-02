@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — eWHODAS</title>
+  <style>
+    :root{
+      --bg:#f7f8fb; --card:#fff; --muted:#555; --brand:#0b5cff;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{background:var(--bg); margin:0; padding:28px; color:#111}
+    .wrap{max-width:880px; margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    h1{margin:0;font-size:20px}
+    .lang-btns{margin-left:auto;display:flex;gap:8px}
+    button{background:transparent;border:1px solid #ddd;padding:6px 10px;border-radius:8px;cursor:pointer}
+    button.active{border-color:var(--brand);box-shadow:0 2px 8px rgba(11,92,255,0.12)}
+    .card{background:var(--card);padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,30,0.04)}
+    .section{margin-bottom:14px}
+    .k{font-weight:700;color:#222}
+    small{color:var(--muted)}
+    footer{margin-top:18px;font-size:13px;color:var(--muted)}
+    a{color:var(--brand)}
+    /* simple responsive */
+    @media (max-width:480px){ .wrap{padding:0 12px} header{gap:8px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>{{APP_NAME}} — Privacy Policy</h1>
+        <small id="effective">Effective date: <span id="effective-date">2025-10-02</span></small>
+      </div>
+      <div class="lang-btns" role="tablist" aria-label="Language">
+        <button id="btn-en" class="active" role="tab" aria-selected="true">English</button>
+        <button id="btn-pt" role="tab" aria-selected="false">Português</button>
+      </div>
+    </header>
+
+    <main class="card" id="content">
+      <!-- English -->
+      <section class="lang lang-en" data-lang="en">
+        <p class="section"><span class="k">Short summary:</span> We collect minimal information to make the app work. We never sell your personal data.</p>
+
+        <div class="section">
+          <div class="k">1. Data we collect</div>
+          <p class="muted">Account info (optional): email if you provide it. Usage diagnostics (anonymous) to help improve the app.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">2. Why we collect it</div>
+          <p class="muted">To operate the app, fix bugs, and understand usage trends. We avoid collecting unnecessary personal data.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">3. Third-party services</div>
+          <p class="muted">We may use third-party analytics or crash-reporting services. These providers have their own privacy terms.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">4. Data sharing & retention</div>
+          <p class="muted">We do not sell data. We retain data only as long as necessary for app operation and support requests.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">5. Your rights</div>
+          <p class="muted">You can request access, corrections, or deletion of personal data by contacting us (see below).</p>
+        </div>
+
+        <div class="section">
+          <div class="k">6. Security</div>
+          <p class="muted">We use industry-standard measures to protect data, but no system is perfect—please notify us of concerns.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">Contact</div>
+          <p class="muted">Email: <a href="mailto:ewhodasapp@gmail.com">ewhodasapp@gmail.com</a></p>
+        </div>
+      </section>
+
+      <!-- Portuguese (Brazil) -->
+      <section class="lang lang-pt" data-lang="pt" style="display:none">
+        <p class="section"><span class="k">Resumo curto:</span> Coletamos apenas o necessário para o funcionamento do app. Não vendemos seus dados pessoais.</p>
+
+        <div class="section">
+          <div class="k">1. Dados que coletamos</div>
+          <p class="muted">Informações de conta (opcional): e-mail se você fornecer. Diagnósticos de uso (anônimos) para melhorar o app.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">2. Por que coletamos</div>
+          <p class="muted">Para operar o app, corrigir bugs e entender o uso. Evitamos coletar dados pessoais desnecessários.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">3. Serviços de terceiros</div>
+          <p class="muted">Podemos usar serviços de análise ou relatórios de falhas de terceiros. Esses provedores têm suas próprias políticas de privacidade.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">4. Compartilhamento e retenção</div>
+          <p class="muted">Não vendemos dados. Reteremos dados apenas enquanto necessário para operação do app e suporte.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">5. Seus direitos</div>
+          <p class="muted">Você pode solicitar acesso, correções ou exclusão dos seus dados pessoais entrando em contato conosco (veja abaixo).</p>
+        </div>
+
+        <div class="section">
+          <div class="k">6. Segurança</div>
+          <p class="muted">Utilizamos medidas de segurança padrão do setor, mas nenhum sistema é perfeito — informe-nos sobre preocupações.</p>
+        </div>
+
+        <div class="section">
+          <div class="k">Contato</div>
+          <p class="muted">E-mail: <a href="mailto:privacy@example.com">privacy@example.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Need this page in another language or want a longer legal text? Open a PR in the repository.</small>
+    </footer>
+  </div>
+
+  <script>
+    // Simple language toggle
+    const enBtn = document.getElementById('btn-en');
+    const ptBtn = document.getElementById('btn-pt');
+    const enSection = document.querySelector('.lang-en');
+    const ptSection = document.querySelector('.lang-pt');
+
+    function setLang(l){
+      if(l==='en'){
+        enSection.style.display='block';
+        ptSection.style.display='none';
+        enBtn.classList.add('active'); enBtn.setAttribute('aria-selected','true');
+        ptBtn.classList.remove('active'); ptBtn.setAttribute('aria-selected','false');
+        document.documentElement.lang='en';
+      } else {
+        enSection.style.display='none';
+        ptSection.style.display='block';
+        ptBtn.classList.add('active'); ptBtn.setAttribute('aria-selected','true');
+        enBtn.classList.remove('active'); enBtn.setAttribute('aria-selected','false');
+        document.documentElement.lang='pt';
+      }
+    }
+
+    enBtn.addEventListener('click',()=>setLang('en'));
+    ptBtn.addEventListener('click',()=>setLang('pt'));
+
+    // Optional: auto set by browser lang
+    const userLang = navigator.language || navigator.userLanguage;
+    if(userLang && userLang.startsWith('pt')) setLang('pt');
+  </script>
+</body>
+</html>
