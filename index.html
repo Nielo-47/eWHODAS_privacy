@@ -11,27 +11,38 @@
     }
     body{background:var(--bg); margin:0; padding:28px; color:#111}
     .wrap{max-width:880px; margin:0 auto}
-    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px;flex-wrap:wrap}
     h1{margin:0;font-size:20px}
     .lang-btns{margin-left:auto;display:flex;gap:8px}
-    button{background:transparent;border:1px solid #ddd;padding:6px 10px;border-radius:8px;cursor:pointer}
+    button{background:transparent;border:1px solid #ddd;padding:6px 10px;border-radius:8px;cursor:pointer;font-size:14px}
     button.active{border-color:var(--brand);box-shadow:0 2px 8px rgba(11,92,255,0.12)}
-    .card{background:var(--card);padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,30,0.04)}
-    .section{margin-bottom:14px}
-    .k{font-weight:700;color:#222}
+    .card{background:var(--card);padding:32px;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,30,0.04)}
+    .section{margin-bottom:20px}
+    .k{font-weight:700;color:#222;margin-bottom:8px}
+    .muted{color:var(--muted);line-height:1.6}
     small{color:var(--muted)}
     footer{margin-top:18px;font-size:13px;color:var(--muted)}
     a{color:var(--brand)}
+    p{margin:0 0 12px 0;line-height:1.6}
+    h2{font-size:18px;margin:24px 0 12px 0;color:#222}
+    h3{font-size:16px;margin:20px 0 10px 0;color:#333}
+    ul{margin:8px 0;padding-left:24px}
+    li{margin-bottom:8px;line-height:1.6}
+    .loading{text-align:center;padding:40px;color:var(--muted)}
     /* simple responsive */
-    @media (max-width:480px){ .wrap{padding:0 12px} header{gap:8px} }
+    @media (max-width:480px){ 
+      .wrap{padding:0 12px} 
+      header{gap:8px}
+      .card{padding:20px}
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div>
-        <h1>{{APP_NAME}} — Privacy Policy</h1>
-        <small id="effective">Effective date: <span id="effective-date">2025-10-02</span></small>
+        <h1>eWHODAS — Privacy Policy</h1>
+        <small id="effective">Last updated: <span id="effective-date">February 02, 2022</span></small>
       </div>
       <div class="lang-btns" role="tablist" aria-label="Language">
         <button id="btn-en" class="active" role="tab" aria-selected="true">English</button>
@@ -42,119 +53,150 @@
     <main class="card" id="content">
       <!-- English -->
       <section class="lang lang-en" data-lang="en">
-        <p class="section"><span class="k">Short summary:</span> We collect minimal information to make the app work. We never sell your personal data.</p>
+        <p><strong>Welcome! Thank you for using eWHODAS!</strong></p>
 
-        <div class="section">
-          <div class="k">1. Data we collect</div>
-          <p class="muted">Account info (optional): email if you provide it. Usage diagnostics (anonymous) to help improve the app.</p>
-        </div>
+        <p>This application and its contents ("<strong>eWHODAS</strong>") are controlled and operated by eWHODAS itself with non-exclusive authorization from the World Health Organization (WHO), creator of WHODAS (authorization 317992). All rights reserved.</p>
 
-        <div class="section">
-          <div class="k">2. Why we collect it</div>
-          <p class="muted">To operate the app, fix bugs, and understand usage trends. We avoid collecting unnecessary personal data.</p>
-        </div>
+        <p>These terms of use are intended to define the rules to be followed for the use of eWHODAS ("<strong>Terms of Use</strong>"), without prejudice to the application of the legislation in force.</p>
 
-        <div class="section">
-          <div class="k">3. Third-party services</div>
-          <p class="muted">We may use third-party analytics or crash-reporting services. These providers have their own privacy terms.</p>
-        </div>
+        <p><strong>BY USING eWHODAS, YOU AUTOMATICALLY AGREE TO BE BOUND BY THESE TERMS OF USE, BEING FULLY RESPONSIBLE FOR ANY AND ALL ACTS PRACTICED BY YOU ON eWHODAS OR IN RELATED SERVICES. IF YOU DO NOT AGREE WITH ANY OF THE TERMS AND CONDITIONS SET OUT BELOW, YOU SHOULD NOT USE eWHODAS. YOU ALSO AGREE TO THE TERMS OUTLINED IN OUR PRIVACY POLICY.</strong></p>
 
-        <div class="section">
-          <div class="k">4. Data sharing & retention</div>
-          <p class="muted">We do not sell data. We retain data only as long as necessary for app operation and support requests.</p>
-        </div>
+        <p>If you would like to provide feedback on eWHODAS, have questions, or need to address any issue related to these Terms of Use, please contact us at <a href="mailto:castross@ufc.br">castross@ufc.br</a>.</p>
 
-        <div class="section">
-          <div class="k">5. Your rights</div>
-          <p class="muted">You can request access, corrections, or deletion of personal data by contacting us (see below).</p>
-        </div>
+        <h2>1. WHAT IS eWHODAS?</h2>
+        <p><strong>1.1. Services.</strong> eWHODAS is a platform that offers the following services: evaluation of the functionality and disability of subjects based on the World Health Organization Disability Assessment Schedule (WHODAS) with presentation of scores (weighted scores) in numeric and graphic format by domain and total; saving and retrieval of data from the evaluated subjects; production of a report with information on the evaluator and the evaluated subject, besides the numeric and graphic scores and sharing.</p>
+        
+        <p><strong>1.2. Suspension.</strong> We reserve the right to suspend or cancel, at any time, your access to the application in case of suspicion of fraud, obtaining benefit or advantage in an illicit manner, or for failure to comply with any conditions set forth in these Terms of Use, Privacy Policy or applicable law. In such cases, no compensation will be due to you, and eWHODAS may take action for recourse, if necessary, as well as take any other measures necessary to pursue and protect your interests.</p>
 
-        <div class="section">
-          <div class="k">6. Security</div>
-          <p class="muted">We use industry-standard measures to protect data, but no system is perfect—please notify us of concerns.</p>
-        </div>
+        <h2>2. HOW DO I ACCESS eWHODAS?</h2>
+        <p><strong>2.1. Access.</strong> In order to access eWHODAS and use its functionalities you need to register. To register, you will provide us with personal information.</p>
+        
+        <p><strong>2.2. Age of Use.</strong> In order to use eWHODAS, you must be at least eighteen (18) years old. If you are under age, you may use eWHODAS provided that you have the supervision of your parent or legal guardian and provided that they have read and expressly agreed to these Terms of Use.</p>
+        
+        <p><strong>2.3. Ownership.</strong> Upon registration, you will be the holder of an account that can only be accessed by you. If eWHODAS detects any account made from false information, for example, by users who are under the minimum age allowed, that account will be automatically deleted.</p>
+        
+        <p><strong>2.4. Updating information.</strong> You agree to keep your personal information up to date. You also agree that you will keep your login and password secure out of the reach of third parties, and that you will not allow your eWHODAS account to be used by others. Thus, you take responsibility for all actions performed on your account.</p>
 
-        <div class="section">
-          <div class="k">Contact</div>
-          <p class="muted">Email: <a href="mailto:ewhodasapp@gmail.com">ewhodasapp@gmail.com</a></p>
+        <h2>3. WHAT RIGHTS DO eWHODAS HAVE IN THE APPLICATION?</h2>
+        <p><strong>3.1. Our rights.</strong> All rights to eWHODAS and its functionality are the exclusive property of eWHODAS, including with respect to its text, images, layouts, software, codes, databases, graphics, articles, photographs and other content produced directly or indirectly by eWHODAS ("eWHODAS Content").</p>
+        
+        <p>The eWHODAS Content is protected by copyright and intellectual property law. It is prohibited to use, copy, reproduce, modify, translate, publish, transmit, distribute, perform, upload, display, license, sell or exploit and reverse engineer the eWHODAS Content for any purpose without the express prior consent of those responsible for eWHODAS. Any unauthorized use of the eWHODAS Content will be considered a violation of eWHODAS's copyright and intellectual property rights.</p>
+
+        <h2>4. INTELLECTUAL PROPERTY IN THE SOFTWARE AND MATERIALS PROVIDED</h2>
+        <p><strong>4.1. Intellectual property.</strong> For us at eWHODAS, the quality of the materials made available to the user is of paramount importance. Their creation is the result of hard work and dedication of our developers. Therefore, we reaffirm that eWHODAS warrants that all right, title and interest (including, but not limited to, copyright, trademark and other intellectual property rights) in the service provided by us shall remain the property of eWHODAS.</p>
+        
+        <p><strong>4.2. No Acquisition of Rights.</strong> You shall not acquire any ownership rights in the eWHODAS services and content except as expressly granted in these Terms of Use.</p>
+        
+        <p><strong>4.3. Downloading of Content.</strong> It is prohibited for the user to download our content for the purpose of storing it in a database to offer it to anyone other than the user. You may not use the content made available by us to create a database or service that competes in any way with our business.</p>
+
+        <h2>5. CLAIMS OF COPYRIGHT INFRINGEMENT</h2>
+        <p><strong>5.1. Copyright Infringement.</strong> Claims of copyright infringement of any content available on eWHODAS should be forwarded via email to <a href="mailto:castross@ufc.br">castross@ufc.br</a>.</p>
+
+        <h2>6. eWHODAS USER LIABILITIES</h2>
+        <p><strong>6.1. Responsibility for Use.</strong> You are solely responsible for the use of eWHODAS and shall abide by the rules of these Terms of Use as well as the legislation applicable to eWHODAS.</p>
+        
+        <p><strong>6.2. Liability for Damages.</strong> eWHODAS, its controller, affiliates, partners or employees shall in no event be liable for direct or indirect damages arising out of or in connection with access, use or inability to access or use eWHODAS.</p>
+        
+        <p><strong>6.3. No Liability.</strong> IN REGARD TO THE INHERENT CHARACTERISTICS OF THE INTERNET ENVIRONMENT, eWHODAS IS NOT RESPONSIBLE FOR ANY INTERRUPTIONS OR SUSPENSION OF CONNECTION, INCOMPLETE OR FAILURE COMPUTER TRANSMISSIONS, AS WELL AS TECHNICAL FAILURE OF ANY KIND, INCLUDING, BUT NOT LIMITED TO, ELECTRONIC MALFUNCTION OF ANY NETWORK, HARDWARE OR SOFTWARE. UNAVAILABILITY OF ACCESS TO THE INTERNET OR eWHODAS, AS WELL AS ANY INCORRECT OR INCOMPLETE INFORMATION ON eWHODAS AND ANY HUMAN, TECHNICAL OR OTHER FAILURE IN THE PROCESSING OF eWHODAS INFORMATION SHALL NOT BE AGAINST eWHODAS' LIABILITY. eWHODAS DISCLAIMS ANY LIABILITY ARISING FROM SUCH FACTS AND/OR ACTS.</p>
+        
+        <p><strong>6.4. Loss of Profits.</strong> Where permitted by law, eWHODAS and the suppliers or distributors will not be liable for loss of profits, loss of revenue, loss of data, financial loss or for indirect, special, consequential, exemplary or punitive damages.</p>
+        
+        <p><strong>6.5. Maintenance.</strong> It is your responsibility to keep the environment of your device (computer, cell phone, tablet, among others) safe, using available tools, such as anti-virus, firewall, among others, in order to contribute to the prevention of electronic risks.</p>
+        
+        <p><strong>6.6. External Links.</strong> It is possible that eWHODAS may contain links to third party sites and applications, as well as have integrated technologies. This in no way implies that eWHODAS endorses, verifies, guarantees or has any connection with the owners of these sites or applications, and is not responsible for their content, accuracy, policies, practices or opinions. eWHODAS recommends that you read the terms of use and privacy policies of each third party website or service that you may visit or use.</p>
+
+        <h2>7. HOW DOES eWHODAS HANDLE THE CONTENT YOU AND OTHER USERS PRODUCE?</h2>
+        <p><strong>7.1. Creation of Content.</strong> eWHODAS may, in its sole discretion, allow you or any other user to submit, upload, post or otherwise make available on the application text, image, audio or video content or information ("<strong>User Content</strong>").</p>
+        
+        <p><strong>7.2. Prohibited Content.</strong> Any User Content that is defamatory, libelous, violent, pornographic, obscene, offensive or illicit, as determined by eWHODAS in its sole discretion, including proprietary information belonging to other persons or companies (e.g. copyrights, trademarks, etc.), without the express authorization of the owner of such rights, is prohibited, and eWHODAS shall not be liable for any violation thereof.</p>
+        
+        <p><strong>7.3. Ownership of Content.</strong> Any User Content provided by you remains your property. However, by providing it to eWHODAS, you grant us a worldwide, indefinite term, free and transferable license and right to sublicense, use, copy, modify, create derivative works, distribute, publish, display such User Content in all possible formats and distribution channels, without further notice to you, and without the need for any payment, provided that this is related to the operation of the platform. <strong>Furthermore, the data will be protected by encryption, which means that we will be "blind" to such Content.</strong></p>
+        
+        <p><strong>7.4. Exclusion of Content.</strong> eWHODAS may, but is not obligated to, review, monitor and remove User Content, in eWHODAS' sole discretion, at any time and for any reason, without any notice to you.</p>
+
+        <h2>8. WHAT ELSE DO I NEED TO KNOW ABOUT THESE TERMS OF USE?</h2>
+        <p><strong>8.1. Changes.</strong> To improve your experience, eWHODAS is always being updated. For that reason, these Terms of Use may be changed at any time to reflect the adjustments made. However, whenever a modification occurs, you will be informed in advance by the e-mail address provided by you at the time of registration or by a prominent notice in the application. If you do not agree with the new Terms of Use, you may reject them, but unfortunately this means that you will no longer be able to access and make use of eWHODAS. If you use eWHODAS anyway even after these Terms of Use have changed, it means you agree to all the changes.</p>
+        
+        <p><strong>8.2. Conflict of Provisions.</strong> In the event of a conflict between these terms and the modified terms, the later terms will prevail with respect to that conflict.</p>
+        
+        <p><strong>8.3. Law and Venue.</strong> These Terms of Use are governed by the laws of the Federative Republic of Brazil. Any doubts and situations not provided for in these Terms of Use shall be primarily resolved by eWHODAS and, if they persist, shall be resolved by the District Court of Fortaleza, Ceará, to the exclusion of any other, however privileged it may be or may become.</p>
+
+        <div style="margin-top:32px;padding-top:24px;border-top:1px solid #eee">
+          <p><strong>Contact</strong></p>
+          <p>Email: <a href="mailto:ewhodasapp@gmail.com">ewhodasapp@gmail.com</a></p>
         </div>
       </section>
 
       <!-- Portuguese (Brazil) -->
       <section class="lang lang-pt" data-lang="pt" style="display:none">
-        <p class="section"><span class="k">Resumo curto:</span> Coletamos apenas o necessário para o funcionamento do app. Não vendemos seus dados pessoais.</p>
+        <p><strong>Bem vindo(a)! Obrigado por utilizar o eWHODAS!</strong></p>
 
-        <div class="section">
-          <div class="k">1. Dados que coletamos</div>
-          <p class="muted">Informações de conta (opcional): e-mail se você fornecer. Diagnósticos de uso (anônimos) para melhorar o app.</p>
-        </div>
+        <p>Esta aplicação e seu conteúdo ("<strong>eWHODAS</strong>") são controlados e operados pelo próprio eWHODAS com autorização não exclusiva da World Health Organization (WHO), criadora do WHODAS (autorização 317992). Todos os direitos reservados.</p>
 
-        <div class="section">
-          <div class="k">2. Por que coletamos</div>
-          <p class="muted">Para operar o app, corrigir bugs e entender o uso. Evitamos coletar dados pessoais desnecessários.</p>
-        </div>
+        <p>Esses termos de uso têm por objetivo definir as regras a serem seguidas para a utilização do eWHODAS ("<strong>Termos de uso</strong>"), sem prejuízo da aplicação da legislação vigente.</p>
 
-        <div class="section">
-          <div class="k">3. Serviços de terceiros</div>
-          <p class="muted">Podemos usar serviços de análise ou relatórios de falhas de terceiros. Esses provedores têm suas próprias políticas de privacidade.</p>
-        </div>
+        <p><strong>AO UTILIZAR O eWHODAS, VOCÊ AUTOMATICAMENTE CONCORDA COM ESTES TERMOS DE USO, RESPONSABILIZANDO-SE INTEGRALMENTE POR TODOS E QUAISQUER ATOS PRATICADOS POR VOCÊ NO eWHODAS OU EM SERVIÇOS A ELE RELACIONADOS. CASO VOCÊ NÃO CONCORDE COM QUALQUER DOS TERMOS E CONDIÇÕES ABAIXO ESTABELECIDOS, VOCÊ NÃO DEVE UTILIZAR O eWHODAS. VOCÊ TAMBÉM CONCORDA COM OS TERMOS DESCRITOS EM NOSSA POLÍTICA DE PRIVACIDADE.</strong></p>
 
-        <div class="section">
-          <div class="k">4. Compartilhamento e retenção</div>
-          <p class="muted">Não vendemos dados. Reteremos dados apenas enquanto necessário para operação do app e suporte.</p>
-        </div>
+        <p>Caso queira dar um feedback sobre o eWHODAS, tenha dúvidas ou precise tratar de qualquer assunto relacionado a estes Termos de Uso, entre em contato conosco através do e-mail <a href="mailto:castross@ufc.br">castross@ufc.br</a>.</p>
 
-        <div class="section">
-          <div class="k">5. Seus direitos</div>
-          <p class="muted">Você pode solicitar acesso, correções ou exclusão dos seus dados pessoais entrando em contato conosco (veja abaixo).</p>
-        </div>
+        <h2>1. O QUE É O eWHODAS?</h2>
+        <p><strong>1.1. Serviços.</strong> O eWHODAS é uma plataforma que oferece os seguintes serviços: avaliação da funcionalidade e deficiência de sujeitos baseada no WHODAS (World Health Organization Disability Assessment Schedule) com apresentação de pontuação (escores ponderados) no formato numérico e gráfico por domínio e total; salvamento e recuperação de dados dos sujeitos avaliados; produção de relatório com informações do avaliador e do avaliado, além dos escores numéricos e gráficos e compartilhamento.</p>
+        
+        <p><strong>1.2. Suspensão.</strong> Nós nos reservamos o direito de suspender ou cancelar, a qualquer momento, o seu acesso à aplicação em caso de suspeita de fraude, obtenção de benefício ou vantagem de forma ilícita, ou pelo não cumprimento de quaisquer condições previstas nestes Termos de Uso, na Política de Privacidade ou na legislação aplicável. Nesses casos, não será devida qualquer indenização a você, e o eWHODAS poderá promover a competente ação de regresso, se necessário, bem como tomar quaisquer outras medidas necessárias para perseguir e resguardar seus interesses.</p>
 
-        <div class="section">
-          <div class="k">6. Segurança</div>
-          <p class="muted">Utilizamos medidas de segurança padrão do setor, mas nenhum sistema é perfeito — informe-nos sobre preocupações.</p>
-        </div>
+        <h2>2. COMO ACESSO O eWHODAS?</h2>
+        <p><strong>2.1. Acesso.</strong> Para acessar o eWHODAS e utilizar suas funcionalidades é necessário efetuar um cadastro. Para cadastrar-se, você nos fornecerá informações pessoais.</p>
+        
+        <p><strong>2.2. Idade de utilização.</strong> Para utilizar o eWHODAS, você deve ter pelo menos 18 (dezoito) anos. Caso você tenha idade inferior, você poderá utilizar o eWHODAS desde que com a supervisão dos seus pais ou responsáveis legais e desde que eles tenham lido e concordado expressamente com estes Termos de Uso.</p>
+        
+        <p><strong>2.3. Titularidade.</strong> A partir do cadastro, você será titular de uma conta que somente poderá ser acessada por você. Caso o eWHODAS detecte alguma conta feita a partir de informações falsas, por usuários que, por exemplo, não possuem idade mínima permitida, essa conta será automaticamente deletada.</p>
+        
+        <p><strong>2.4. Atualização das informações.</strong> Desde já, você se compromete a manter as suas informações pessoais atualizadas. Você também concorda que irá manter o seu login e senha seguros fora do alcance de terceiros, e que não permitirá que a sua conta no eWHODAS seja usada por outras pessoas. Dessa forma, o usuário responsabiliza-se por todas as ações realizadas em sua conta.</p>
 
-        <div class="section">
-          <div class="k">Contato</div>
-          <p class="muted">E-mail: <a href="mailto:privacy@example.com">privacy@example.com</a></p>
-        </div>
-      </section>
-    </main>
+        <h2>3. QUAIS SÃO OS DIREITOS DO eWHODAS SOBRE A APLICAÇÃO?</h2>
+        <p><strong>3.1. Nossos direitos.</strong> Todos os direitos relativos aos eWHODAS e suas funcionalidades são de propriedade exclusiva do eWHODAS, inclusive no que diz respeito aos seus textos, imagens, layouts, software, códigos, bases de dados, gráficos, artigos, fotografias e demais conteúdos produzidos direta ou indiretamente pelo eWHODAS ("Conteúdo eWHODAS").</p>
+        
+        <p>O Conteúdo eWHODAS é protegido pela lei de direitos autorais e propriedade intelectual. É proibido usar, copiar, reproduzir, modificar, traduzir, publicar, transmitir, distribuir, executar, fazer o upload, exibir, licenciar, vender ou explorar e fazer engenharia reversa do Conteúdo eWHODAS, para qualquer finalidade, sem o consentimento prévio e expresso dos responsáveis pelo eWHODAS. Qualquer uso não autorizado do Conteúdo eWHODAS será considerado como violação dos direitos autorais e de propriedade intelectual do eWHODAS.</p>
 
-    <footer>
-      <small>Need this page in another language or want a longer legal text? Open a PR in the repository.</small>
-    </footer>
-  </div>
+        <h2>4. PROPRIEDADE INTELECTUAL SOBRE O SOFTWARE E OS MATERIAIS DISPONIBILIZADOS</h2>
+        <p><strong>4.1. Propriedade intelectual.</strong> Para nós do eWHODAS, a qualidade dos materiais disponibilizados ao usuário é de suma importância. A criação deles é fruto de muito trabalho e dedicação de nossos desenvolvedores. Por isso, reafirmamos que o eWHODAS garante que todos os direitos, título e interesse (incluindo, mas não apenas, os direitos autorais, marcários e outros de propriedade intelectual) sobre o serviço disponibilizado por nós permanecerão sob a titularidade do eWHODAS.</p>
+        
+        <p><strong>4.2. Não-aquisição de Direitos.</strong> O usuário não adquirirá nenhum direito de propriedade sobre os serviços e conteúdos do eWHODAS, exceto quando haja outorga expressa nestes Termos de Uso.</p>
+        
+        <p><strong>4.3. Download de conteúdo.</strong> É proibido que o usuário faça o download de nosso conteúdo com o intuito de armazená-lo em banco de dados para oferecer para terceiro que não seja o próprio usuário. Veda-se, também, que o conteúdo disponibilizado por nós seja usado para criar uma base de dados ou um serviço que possa concorrer de qualquer maneira com o nosso negócio.</p>
 
-  <script>
-    // Simple language toggle
-    const enBtn = document.getElementById('btn-en');
-    const ptBtn = document.getElementById('btn-pt');
-    const enSection = document.querySelector('.lang-en');
-    const ptSection = document.querySelector('.lang-pt');
+        <h2>5. RECLAMAÇÕES SOBRE VIOLAÇÃO DE DIREITO AUTORAL</h2>
+        <p><strong>5.1. Infringência de Direitos.</strong> Alegações de infringência de direito autoral de qualquer conteúdo disponível no eWHODAS devem ser encaminhadas por meio de e-mail para <a href="mailto:castross@ufc.br">castross@ufc.br</a>.</p>
 
-    function setLang(l){
-      if(l==='en'){
-        enSection.style.display='block';
-        ptSection.style.display='none';
-        enBtn.classList.add('active'); enBtn.setAttribute('aria-selected','true');
-        ptBtn.classList.remove('active'); ptBtn.setAttribute('aria-selected','false');
-        document.documentElement.lang='en';
-      } else {
-        enSection.style.display='none';
-        ptSection.style.display='block';
-        ptBtn.classList.add('active'); ptBtn.setAttribute('aria-selected','true');
-        enBtn.classList.remove('active'); enBtn.setAttribute('aria-selected','false');
-        document.documentElement.lang='pt';
-      }
-    }
+        <h2>6. RESPONSABILIDADES DO USUÁRIO DO eWHODAS</h2>
+        <p><strong>6.1. Responsabilidade pelo Uso.</strong> Você é exclusivamente responsável pelo uso do eWHODAS e deverá respeitar as regras destes Termos de Uso, bem como a legislação aplicação ao eWHODAS.</p>
+        
+        <p><strong>6.2. Responsabilização por Eventuais Danos.</strong> O eWHODAS, seu controlador, suas afiliadas, parceiras ou funcionários não serão, em hipótese alguma responsabilizados por danos diretos ou indiretos que resultem de, ou que tenham relação com o acesso, uso ou a incapacidade de acessar ou utilizar o eWHODAS.</p>
+        
+        <p><strong>6.3. Não-responsabilização.</strong> TENDO EM VISTA AS CARACTERÍSTICAS INERENTES AO AMBIENTE DA INTERNET, O eWHODAS NÃO SE RESPONSABILIZA POR INTERRUPÇÕES OU SUSPENSÕES DE CONEXÃO, TRANSMISSÕES DE COMPUTADOR INCOMPLETAS OU QUE FALHEM, BEM COMO POR FALHA TÉCNICA DE QUALQUER TIPO, INCLUINDO, MAS NÃO SE LIMITANDO, AO MAU FUNCIONAMENTO ELETRÔNICO DE QUALQUER REDE, HARDWARE OU SOFTWARE. A INDISPONIBILIDADE DE ACESSO À INTERNET OU AO eWHODAS, ASSIM COMO QUALQUER INFORMAÇÃO INCORRETA OU INCOMPLETA SOBRE O eWHODAS E QUALQUER FALHA HUMANA, TÉCNICA OU DE QUALQUER OUTRO TIPO DE PROCESSAMENTO DAS INFORMAÇÕES DO eWHODAS NÃO SERÃO CONSIDERADAS RESPONSABILIDADE DO eWHODAS. O eWHODAS SE EXIME DE QUALQUER RESPONSABILIDADE PROVENIENTE DE TAIS FATOS E/OU ATOS.</p>
+        
+        <p><strong>6.4. Perda de Lucros.</strong> Quando permitido por lei, o eWHODAS e os fornecedores ou distribuidores não serão responsáveis por perdas de lucros, perda de receita, perda de dados, perdas financeiras ou por danos indiretos, especiais, consequenciais, exemplares ou punitivos.</p>
+        
+        <p><strong>6.5. Manutenção.</strong> É de sua inteira responsabilidade manter o ambiente de seu dispositivo (computador, celular, tablet, entre outros) seguro, com o uso de ferramentas disponíveis, como antivírus, firewall, entre outras, de modo a contribuir na prevenção de riscos eletrônicos.</p>
+        
+        <p><strong>6.6. Links Externos.</strong> É possível que o eWHODAS possa conter links para sites e aplicativos de terceiros, assim como ter tecnologias integradas. Isso não implica, de maneira nenhuma, que o eWHODAS endossa, verifica, garante ou possui qualquer ligação com os proprietários desses sites ou aplicativos, não sendo responsável pelo seu conteúdo, precisão, políticas, práticas ou opiniões. O eWHODAS recomenda que você leia os termos de uso e políticas de privacidade de cada site de terceiros ou serviço que o usuário vier a visitar ou utilizar.</p>
 
-    enBtn.addEventListener('click',()=>setLang('en'));
-    ptBtn.addEventListener('click',()=>setLang('pt'));
+        <h2>7. COMO O eWHODAS LIDA COM O CONTEÚDO QUE VOCÊ E OUTROS USUÁRIOS PRODUZEM?</h2>
+        <p><strong>7.1. Criação de Conteúdo.</strong> O eWHODAS poderá, a seu exclusivo critério, permitir que você ou qualquer outro usuário apresente, carregue, publique ou disponibilize, na aplicação, conteúdo ou informações de texto, imagem, áudio ou vídeo ("<strong>Conteúdo do Usuário</strong>").</p>
+        
+        <p><strong>7.2. Conteúdos Proibidos.</strong> É proibido qualquer Conteúdo de Usuário de caráter difamatório, calunioso, injurioso, violento, pornográfico, obsceno, ofensivo ou ilícito, conforme apuração do eWHODAS a seu critério exclusivo, inclusive informações de propriedade exclusiva pertencentes a outras pessoas ou empresas (ex. direito de autor, marcas, etc), sem a expressa autorização do titular desses direitos, cuja violação não será de responsabilidade do eWHODAS.</p>
+        
+        <p><strong>7.3. Titularidade do Conteúdo.</strong> Qualquer Conteúdo de Usuário fornecido por você permanece de sua propriedade. Contudo, ao fornecê-lo para o eWHODAS, você nos outorga uma licença a nível mundial, por prazo indeterminado, gratuita e transferível, e com direito a sublicenciar, usar, copiar, modificar, criar obras derivadas, distribuir, publicar, exibir esse Conteúdo de Usuário em todos os formatos e canais de distribuição possíveis, sem necessidade de novo aviso a você, e sem necessidade de qualquer pagamento, desde que isso esteja relacionado ao funcionamento da plataforma. <strong>Ademais, os dados serão protegidos por criptografia, o que significa que nós seremos "cegos" com relação a esse Conteúdo.</strong></p>
+        
+        <p><strong>7.4. Exclusão do Conteúdo.</strong> O eWHODAS poderá, mas não se obriga a, analisar, monitorar e remover Conteúdo do Usuário, a critério exclusivo do eWHODAS, a qualquer momento e por qualquer motivo, sem nenhum aviso a você.</p>
 
-    // Optional: auto set by browser lang
-    const userLang = navigator.language || navigator.userLanguage;
-    if(userLang && userLang.startsWith('pt')) setLang('pt');
-  </script>
-</body>
-</html>
+        <h2>8. O QUE MAIS EU PRECISO SABER SOBRE ESSES TERMOS DE USO?</h2>
+        <p><strong>8.1. Alterações.</strong> Para melhorar sua experiência, o eWHODAS está sempre sendo atualizado. Por esse motivo, estes Termos de Uso podem ser alterados, a qualquer tempo, a fim de refletir os ajustes realizados. No entanto, sempre que ocorrer modificação, você será previamente informado pelo endereço de e-mail fornecido por você no momento do cadastro ou por um aviso em destaque na aplicação. Caso você não concorde com os novos Termos de Uso, você poderá rejeitá-los, mas, infelizmente, isso significa que você não poderá mais ter acesso e fazer uso do eWHODAS. Se de qualquer maneira você utilizar o eWHODAS mesmo após a alteração destes Termos de Uso, isso significa que você concorda com todas as modificações.</p>
+        
+        <p><strong>8.2. Conflito entre Disposições.</strong> Em caso de conflito entre estes termos e os termos modificados, os termos posteriores prevalecerão com relação à esse conflito.</p>
+        
+        <p><strong>8.3. Lei e Foro.</strong> Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil. Quaisquer dúvidas e situações não previstas nestes Termos de Uso serão primeiramente resolvidas pelo eWHODAS e, caso persistam, deverão ser solucionadas pelo Foro da Comarca de Fortaleza, Ceará, com exclusão de qualquer outro, por mais privilegiado que seja ou venha a ser.</p>
+        
+        <p><strong>8.4. Dúvidas.</strong> Caso você tenha alguma dúvida, comentário ou sugestão, por favor, entre em contato conosco pelo e-mail <a href="mailto:castross@ufc.br">castross@ufc.br</a>.</p>
+
+        <div style="margin-top:32px;padding-top:24px;border-top:1px solid #eee">
